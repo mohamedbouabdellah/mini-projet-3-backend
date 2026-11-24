@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import com.mohamed.phones.entities.Categorie;
+import com.mohamed.phones.entities.Marque;
 import com.mohamed.phones.entities.Phone;
 
 
@@ -18,10 +18,10 @@ public interface PhoneRepository extends JpaRepository<Phone, Long> {
 	@Query("select p from Phone p where p.nomPhone like %?1 and p.prixPhone > ?2")
 	List<Phone> findByNomPrix (String nom, Double prix);
 	
-	@Query("select p from Phone p where p.categorie = ?1")
-	List<Phone> findByCategorie (Categorie categorie);
+	@Query("select p from Phone p where p.marque = ?1")
+	List<Phone> findByMarque (Marque marque);
 	
-	List<Phone> findByCategorieIdCat(Long id);
+	List<Phone> findByMarqueIdMarque(Long id);
 	
 	List<Phone> findByOrderByNomPhoneAsc();
 	

@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 
+import com.mohamed.phones.entities.Marque;
 import com.mohamed.phones.entities.Phone;
 
 import lombok.AllArgsConstructor;
@@ -24,7 +25,7 @@ public class PhonesApplication implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		repositoryRestConfiguration.exposeIdsFor(Phone.class);
+		repositoryRestConfiguration.exposeIdsFor(Phone.class , Marque.class);
 	}
 
 

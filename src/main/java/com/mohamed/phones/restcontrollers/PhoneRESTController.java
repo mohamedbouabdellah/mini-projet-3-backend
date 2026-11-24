@@ -60,10 +60,10 @@ public class PhoneRESTController {
 		 phoneService.deletePhoneById(id);
 	}
 	 
-	//@RequestMapping(value="/phonescat/{idCat}",method = RequestMethod.GET)
-	 @GetMapping("/phonescat/{idCat}")
-	public List<Phone> getPhonesByCatId(@PathVariable("idCat") Long idCat) {
-	return phoneService.findByCategorieIdCat(idCat);
+	//@RequestMapping(value="/phonesmarque/{idMarque}",method = RequestMethod.GET)
+	 @GetMapping("/phonesmarque/{idMarque}")
+	public List<Phone> getPhonesByMarqueId(@PathVariable("idMarque") Long idMarque) {
+	return phoneService.findByMarqueIdMarque(idMarque);
 	}
 
 	 

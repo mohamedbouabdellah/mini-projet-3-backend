@@ -5,7 +5,7 @@ import java.util.List;
 //import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mohamed.phones.entities.Categorie;
+import com.mohamed.phones.entities.Marque;
 import com.mohamed.phones.entities.Phone;
 import com.mohamed.phones.repos.PhoneRepository;
 
@@ -76,13 +76,13 @@ public class PhoneServiceImpl implements PhoneService  {
 	}
 
 	@Override
-	public List<Phone> findByCategorie(Categorie categorie) {
-		return phoneRepository.findByCategorie(categorie);
+	public List<Phone> findByMarque(Marque marque) {
+		return phoneRepository.findByMarque(marque);
 	}
 
 	@Override
-	public List<Phone> findByCategorieIdCat(Long id) {
-		return phoneRepository.findByCategorieIdCat(id);
+	public List<Phone> findByMarqueIdMarque(Long id) {
+		return phoneRepository.findByMarqueIdMarque(id);
 	}
 
 	@Override

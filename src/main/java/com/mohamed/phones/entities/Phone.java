@@ -20,7 +20,7 @@ public class Phone {
     private Date dateCreation;
     
     @ManyToOne
-    private Categorie categorie ;
+    private Marque marque ;
     
 	public Phone() {
 		super();
@@ -81,16 +81,16 @@ public class Phone {
 
 
 
-	public Categorie getCategorie() {
-		return categorie;
+	public Marque getMarque() {
+		return marque;
 	}
 
 
 
 
 
-	public void setCategorie(Categorie categorie) {
-		this.categorie = categorie;
+	public void setMarque(Marque marque) {
+		this.marque = marque;
 	}
 
 }

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.mohamed.phones.entities.Categorie;
+import com.mohamed.phones.entities.Marque;
 import com.mohamed.phones.entities.Phone;
 import com.mohamed.phones.repos.PhoneRepository;
 
@@ -82,17 +82,17 @@ class PhonesApplicationTests {
 	
 	@Test
 	public void testfindByCategorie(){
-		Categorie cat = new Categorie();
-		cat.setIdCat(1L);
-		List<Phone> phones = phoneRepository.findByCategorie(cat);
+		Marque marque = new Marque();
+		marque.setIdMarque(1L);
+		List<Phone> phones = phoneRepository.findByMarque(marque);
 		for (Phone p : phones){
 				System.out.println(p);
 		}
 	}
 	
 	@Test
-	public void findByCategorieIdCat(){
-		List<Phone> phones = phoneRepository.findByCategorieIdCat(2L);
+	public void findByMarqueIdMarque(){
+		List<Phone> phones = phoneRepository.findByMarqueIdMarque(2L);
 		for (Phone p : phones)
 		{
 			System.out.println(p);

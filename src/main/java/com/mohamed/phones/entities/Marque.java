@@ -19,17 +19,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Categorie {
-	
+public class Marque {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idCat;
-	private String nomCat;
-	private String descriptionCat;
+	private Long idMarque;
+	private String nomMarque;
 	
-	@OneToMany(mappedBy = "categorie")
+	@OneToMany(mappedBy = "marque")
 	@JsonIgnore
 	private List<Phone> phones;
-	
-	
 }

@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.1.1</version>
+		<version>4.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mohamed</groupId>
 	<artifactId>phones</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>phones</name>
-	<description>Projet Spring Boot pour la gestion des produits</description>
+	<description>Projet Spring Boot pour la gestion des phones</description>
 	<url/>
 	<licenses>
 		<license/>
